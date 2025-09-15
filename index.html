@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLUESTOCK - Document Verification</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <div class="bluestock-logo">B</div>
+                </div>
+                <div class="logo-text">
+                    <h1>Bluestock</h1>
+                    <p>Fintech & Platforms</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Screener</a>
+                <a href="#" class="nav-link">Market Live</a>
+                <a href="#" class="nav-link">API</a>
+                <a href="#" class="nav-link">Careers</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">About US</a>
+                <a href="#" class="nav-link">Products</a>
+            </nav>
+            <button class="signin-btn">Sign in</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Document Verification Section -->
+            <div class="verification-section">
+                <div class="verification-header">
+                    <h2>Document Verification System</h2>
+                    <p>Enter the document ID to verify authenticity</p>
+                </div>
+                
+                <div class="verification-form">
+                    <div class="input-group">
+                        <label for="documentId">Docs ID:</label>
+                        <input type="text" id="documentId" placeholder="Enter docs ID" maxlength="50">
+                    </div>
+                    <button id="verifyBtn" onclick="verifyDocument()" class="verify-btn">
+                        Verify Now
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Company Info -->
+            <div class="company-info">
+                <h3>Get Early Access</h3>
+                <p>Never-stopping development is the key factor of our company.</p>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Verification Success Modal -->
+    <div id="verificationModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Document Verification Successful</h2>
+                <div class="verification-icon">
+                    <div class="verification-graphic">
+                        <div class="checkmark"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="verified-document">
+                <h3>Verified Document</h3>
+                <div class="document-details">
+                    <div class="detail-item">
+                        <span class="label">Name:</span>
+                        <span id="modalInternName" class="value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Date:</span>
+                        <span id="modalIssueDate" class="value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Role:</span>
+                        <span id="modalRole" class="value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Duration:</span>
+                        <span id="modalDuration" class="value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Remark:</span>
+                        <span id="modalRemark" class="value"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="closeModal()" class="close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-message" style="display: none;">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span id="errorText"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Bluestock Fintech</h4>
+                    <p>Bluestock™ Fintech & Platforms</p>
+                    <p><strong>Phone:</strong> +91 7038202440</p>
+                    <p><strong>Email:</strong> support@bluestock.com</p>
+                    <p><strong>NISM (SEBI) Registration No:</strong> NISM-202400180448</p>
+                    <p><strong>Registration:</strong> UDYAM-MH-01-0138001</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Market</a></li>
+                        <li><a href="#">Screener</a></li>
+                        <li><a href="#">Bluestock Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Trust & Security</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; Copyright & Trademark Registered in India Bluestock™ All Rights Reserved | Fintech Platforms for a Growing India. 🇮🇳</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
