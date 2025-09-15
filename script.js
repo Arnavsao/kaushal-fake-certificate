@@ -23,7 +23,7 @@ const documentDatabase = {
         company: 'Bluestock Fintech',
         role: 'Software Development Engineer',
         issueDate: '2024-01-15',
-        duration: '1 Jan 2024 - 15 Jan 2024',
+        duration: '1 Jun 2025 - 30 Jul 2025',
         status: 'verified',
         remark: 'verified'
     },
@@ -33,7 +33,7 @@ const documentDatabase = {
         company: 'Bluestock Fintech',
         role: 'Software Development Engineer',
         issueDate: '2024-01-15',
-        duration: '1 Jan 2024 - 15 Jan 2024',
+        duration: '1 Jun 2025 - 30 Jul 2025',
         status: 'verified',
         remark: 'verified'
     },
@@ -43,7 +43,7 @@ const documentDatabase = {
         company: 'Bluestock Fintech',
         role: 'Software Development Engineer',
         issueDate: '2024-01-15',
-        duration: '1 Jan 2024 - 15 Jan 2024',
+        duration: '1 Jun 2025 - 30 Jul 2025',
         status: 'verified',
         remark: 'verified'
     },
@@ -53,7 +53,7 @@ const documentDatabase = {
         company: 'Bluestock Fintech',
         role: 'Data Analyst Intern',
         issueDate: '2024-01-20',
-        duration: '1 Jan 2024 - 20 Jan 2024',
+        duration: '1 Jun 2025 - 30 Jul 2025',
         status: 'verified',
         remark: 'verified'
     }
